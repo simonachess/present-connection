@@ -1,0 +1,107 @@
+/* List page css */
+.posts-container {
+	width: 800px;
+	height: 450px;
+	padding: 20px 50px;
+	background-color: beige;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+}
+
+.post-item {
+	padding: 8px 0;
+	display: flex;
+	flex-direction: row;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.post-item a {
+	text-decoration: none;
+	color: black;
+	padding: 0 10px;
+}
+
+.item-id {
+	width: 40px;
+	height: 20px;
+}
+
+.lamp-img {
+	background-image: url('../img/lamp.png');
+	left: -28%;
+	bottom: -26%;
+	height: 400px;
+	width: 300px;
+}
+
+.cactus-img {
+	background-image: url('../img/cactus.png');
+	right: -6%;
+	top: -38%;
+}
+
+.note-img {
+	background-image: url('../img/Note.svg');
+	height: 240px;
+	width: 420px;
+	right: -32%;
+	bottom: -10%;
+	transform: rotate(-18deg);
+}
+
+.note-text {
+	height: 100px;
+	width: 230px;
+	position: absolute;
+	right: -19%;
+	bottom: 5%;
+	transform: rotate(-18deg);
+	word-wrap: break-word;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.note-text p {
+	font-size: 15px;
+	text-align: center;
+	margin-bottom: 8px;
+}
+
+.page-number button {
+	padding: 10px;
+	width: 40px;
+	height: 40px;
+	margin: 0 3px;
+	border-width: 2px;
+}
+
+.upper-section {
+	position: relative;
+}
+
+.link-new-record button {
+	position: absolute;
+	left: -220%;
+	bottom: -85%;
+}
+
+.post-item a:hover {
+	box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, .3);
+}
+
+.footer img {
+	width: 40px;
+	margin: 0 10px;
+	opacity: 0.6;
+	transition: all 0.3s ease-in-out;
+}
+.footer img:hover {
+	opacity: 1;
+	transform: scale(1.5);
+	cursor: pointer;
+}

@@ -1,0 +1,85 @@
+/* NewRecord page css*/
+
+.new-record-container {
+	width: 500px;
+	height: 600px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+
+.new-record-container form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	font-size: 18px;
+}
+
+.new-record-container input,
+textarea {
+	width: 100%;
+	font-size: 18px;
+	margin-bottom: 20px;
+	padding: 10px;
+	outline: none;
+	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+	border: darkgray 2px solid;
+	box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, .3);
+	font-family: inherit;
+	background-color: ivory;
+}
+
+.new-record-container textarea {
+	resize: vertical;
+	height: 100px;
+	max-height: 150px;
+}
+.new-record-container input[type="number"] {
+	width: 30%;
+	-moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.new-record-container form button {
+	background-color: rgba(165, 216, 152, 0.678);
+	border-color: rgb(108, 180, 98);
+}
+
+.new-record-container form button:hover {
+	background-color: rgb(210, 250, 200);
+}
+
+.one-light-img {
+	background-image: url('../img/blue-light.png');
+	height: 180px;
+	left: -50%;
+	top: -10%;
+}
+
+.bunny-img {
+	background-image: url('../img/bunny1.png');
+	height: 80px;
+	top: 24%;
+	left: 58%;
+}
+.bunny-little-img {
+	background-image: url('../img/bunny2.png');
+	height: 60px;
+	top: 61%;
+	left: -12%;
+}
+
+.book-img {
+	background-image: url('../img/book.png');
+	height: 120px;
+	bottom: 2%;
+	right: -40%;
+}
