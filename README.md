@@ -2,7 +2,7 @@
 
 # Qualification Task page
 
-Site published at: 
+Site published at: https://app.netlify.com/sites/hopeful-hugle-b41880/deploys/618a80ca6eaf610008534877
 
 ## Project features
 
