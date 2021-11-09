@@ -41,7 +41,8 @@
 .cactus-img {
 	background-image: url('../img/cactus.png');
 	right: -6%;
-	top: -38%;
+	top: -40%;
+	height: 200px;
 }
 
 .note-img {
@@ -51,6 +52,7 @@
 	right: -32%;
 	bottom: -10%;
 	transform: rotate(-18deg);
+	z-index: 1;
 }
 
 .note-text {
@@ -65,12 +67,19 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
+	z-index: 1;
+	background-color: transparent;
 }
 
 .note-text p {
 	font-size: 15px;
 	text-align: center;
 	margin-bottom: 8px;
+	background-color: transparent;
+}
+
+.note-text small {
+	background-color: transparent;
 }
 
 .page-number button {
@@ -108,10 +117,34 @@
 	cursor: pointer;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
+	.note-text, .lamp-img, .note-img {
+		display: none;
+	}
+	.cactus-img {
+		right: 1%;
+		top: -35%;
+	}
+	.link-new-record button {
+		left: -80%;
+		bottom: -15%;
+	}
 	.posts-container {
 		width: 100%;
-		height: 100%;
+		height: 480px;
+		padding: 20px;
+		margin: 20px 0;
+	}
+	.pages-container {
+		margin: 20px;
+	}
+	.footer {
+		margin: 20px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.posts-container {
 		padding: 20px 20px 0 20px;
 		margin: 20px 0;
 	}
@@ -124,8 +157,8 @@
 		display: none;
 	}
 	.link-new-record button {
-		left: -60%;
-		bottom: -70%;
+		left: -25%;
+		bottom: -30%;
 	}
 	.page-number-container {
 		width: 160px;

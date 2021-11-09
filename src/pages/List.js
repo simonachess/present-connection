@@ -40,7 +40,7 @@ export default function List() {
             <div className="upper-section">
                 <h1>List page</h1>
                 <div className="link-new-record">
-                    <Link to="new-record"><button>New Record</button></Link>
+                    <button><Link to="new-record">New Record</Link></button>
                 </div>
             </div>
             <div className="posts-container">

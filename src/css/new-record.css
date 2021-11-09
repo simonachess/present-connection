@@ -72,6 +72,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 .bunny-little-img {
 	background-image: url('../img/bunny2.png');
 	height: 60px;
+	width: 60px;
 	top: 61%;
 	left: -12%;
 }
@@ -81,6 +82,17 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 	height: 120px;
 	bottom: 2%;
 	right: -40%;
+}
+
+@media screen and (max-width: 768px) {
+	.book-img {
+		bottom: -2%;
+		right: -12%;
+	}
+	.bunny-img {
+		top: 28%;
+		left: 62%;
+	}
 }
 
 @media screen and (max-width: 480px) {
