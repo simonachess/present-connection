@@ -1,17 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import axios from 'axios';
 
 export default function RecordDetails() {
-    let params = useParams();
-    const [data, setData] = useState([]);
 
-    useEffect(() => {
-        const url = `https://jsonplaceholder.typicode.com/posts/${params.id}`;
-        axios.get(url).then(res => {
-            setData(res.data)
-        });
-    }, [])
+    const [data, setData] = useState([]);
+    let params = useParams();
+
+
+    const url = `https://jsonplaceholder.typicode.com/posts/${params.id}`;
+    axios.get(url).then(res => {
+        setData(res.data)
+    });
+
 
     return (
         <div className="main-container ">
