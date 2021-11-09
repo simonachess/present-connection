@@ -47,6 +47,7 @@
 	left: -20%;
 	bottom: -30%;
 	height: 200px;
+	width: 100px;
 }
 
 .cat-img {
@@ -54,6 +55,18 @@
 	right: -13%;
 	bottom: 5%;
 	width: 70px;
+}
+
+@media screen and (max-width: 768px) {
+	.window-img {
+		display: none;
+	}
+	.flower-img {
+		left: -5%;
+	}
+	.details-subcontainer {
+		margin-bottom: 20px;
+	}
 }
 
 @media screen and (max-width: 480px) {
@@ -84,7 +97,7 @@
 		width: 70px;
 		transform: rotate(-90deg)
 	}
-	.flower-img, .window-img {
+	.flower-img {
 		display: none;
 	}
 }
