@@ -63,7 +63,7 @@ export default function NewRecord() {
                     {!isPending && <button type="submit">Add</button>}
                     {isPending && <button type="submit" disabled>Adding...</button>}
                 </form>
-                <Link to="/"><button>Back to List</button></Link>
+                <button><Link to="/">Back to List</Link></button>
             </div>
         </div>
     )

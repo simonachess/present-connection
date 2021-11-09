@@ -58,8 +58,8 @@
 
 @media screen and (max-width: 480px) {
 	.details-container {
-		/* width: 100%;
-		height: 100%; */
+		width: 100%;
+		height: 100%;
 		justify-content: space-evenly;
 	}
 	.details-subcontainer {
@@ -80,7 +80,7 @@
 	}
 	.cat-img {
 		right: 13%;
-		top: -20%;
+		top: -18%;
 		width: 70px;
 		transform: rotate(-90deg)
 	}

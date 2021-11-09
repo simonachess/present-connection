@@ -27,7 +27,7 @@ export default function RecordDetails() {
                     <div className="record-item"><span className="item-key-style">Title: </span><p>{data.title}</p></div>
                     <div className="record-item"><span className="item-key-style">Body: </span><p>{data.body}</p></div>
                 </div>
-                <Link to="/"><button className="back-button">Back to List</button></Link>
+                <button className="back-button"><Link to="/">Back to List</Link></button>
             </div>
         </div>
     )
