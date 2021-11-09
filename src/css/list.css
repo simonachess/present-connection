@@ -1,4 +1,5 @@
 /* List page css */
+
 .posts-container {
 	width: 800px;
 	height: 450px;
@@ -100,8 +101,45 @@
 	opacity: 0.6;
 	transition: all 0.3s ease-in-out;
 }
+
 .footer img:hover {
 	opacity: 1;
 	transform: scale(1.5);
 	cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+	.posts-container {
+		width: 100%;
+		height: 100%;
+		padding: 0 20px;
+	}
+	.post-item {
+		font-size: 15px;
+		padding: 3px 0;
+		display: inline;
+	}
+	.note-text, .note-img, .lamp-img, .cactus-img {
+		display: none;
+	}
+	.link-new-record button {
+		left: -70%;
+		bottom: -105%;
+	}
+	.page-number-container {
+		width: 160px;
+		margin-bottom: 40px;
+	}
+	.page-number button {
+		padding: 2px 0;
+		width: 25px;
+		height: 25px;
+		margin: 3px;
+	}
+	.footer img {
+		width: 30px;
+	}
+	.upper-section {
+		margin-bottom: 30px;
+	}
 }

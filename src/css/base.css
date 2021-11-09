@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap');
-
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -15,7 +14,6 @@ h1 {
 }
 
 button {
-	font-size: 16px;
 	font-family: inherit;
 	font-weight: 700;
 	align-self: center;
@@ -48,20 +46,31 @@ button:hover {
 	flex-direction: column;
 }
 
-.lamp-img,
-.cactus-img,
-.note-img,
-.window-img,
-.flower-img,
-.cat-img,
-.one-light-img,
-.bunny-img,
-.bunny-little-img,
-.book-img {
+.lamp-img, .cactus-img, .note-img, .window-img, .flower-img, .cat-img, .one-light-img, .bunny-img, .bunny-little-img, .book-img {
 	height: 350px;
 	width: 200px;
 	background-size: contain;
 	background-repeat: no-repeat;
 	position: absolute;
 	opacity: 0.7;
+}
+
+@media screen and (max-width: 480px) {
+	h1 {
+		font-size: 36px;
+	}
+	button {
+		font-size: 14px;
+		padding: 3px 7px;
+		z-index: 1;
+	}
+	.main-container {
+		width: 100%;
+		padding: 40px 0px;
+		justify-content: unset;
+	}
+	.lamp-img, .cactus-img, .note-img, .window-img, .flower-img, .cat-img, .one-light-img, .bunny-img, .bunny-little-img, .book-img {
+		height: 150px;
+		width: 100px;
+	}
 }

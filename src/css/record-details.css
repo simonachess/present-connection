@@ -26,6 +26,7 @@
 	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
 	box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, .3);
 }
+
 .item-key-style {
 	width: 100px;
 	padding: 15px 0px;
@@ -53,4 +54,37 @@
 	right: -13%;
 	bottom: 5%;
 	width: 70px;
+}
+
+@media screen and (max-width: 480px) {
+	.details-container {
+		/* width: 100%;
+		height: 100%; */
+		justify-content: space-evenly;
+	}
+	.details-subcontainer {
+		width: 290px;
+	}
+	.record-item {
+		flex-direction: column;
+		padding: 0;
+	}
+	.record-item p {
+		padding: 8px;
+		font-size: 18px;
+	}
+	.item-key-style {
+		width: 100px;
+		padding: 8px 0px;
+		font-size: 16px;
+	}
+	.cat-img {
+		right: 13%;
+		top: -20%;
+		width: 70px;
+		transform: rotate(-90deg)
+	}
+	.flower-img, .window-img {
+		display: none;
+	}
 }

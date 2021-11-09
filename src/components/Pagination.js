@@ -6,7 +6,7 @@ export default function Pagination({ postsPerPage, totalPosts, paginate }) {
         pageNumbers.push(i);
     }
     return (
-        <div>
+        <div className="page-number-container">
             {pageNumbers.map(number => {
                 return (
                     <span className="page-number" key={number} >
