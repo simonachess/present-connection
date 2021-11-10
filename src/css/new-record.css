@@ -1,13 +1,12 @@
 /* NewRecord page css*/
 
 .new-record-container {
-	width: 500px;
-	height: 600px;
+	width: 100%;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
-	position: relative;
 }
 
 .new-record-container form {
@@ -55,38 +54,8 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 	background-color: rgb(210, 250, 200);
 }
 
-.one-light-img {
-	background-image: url('../img/blue-light.png');
-	height: 180px;
-	left: -50%;
-	top: -10%;
-}
-
-.bunny-img {
-	background-image: url('../img/bunny1.png');
-	height: 80px;
-	width: 90px;
-	top: 22%;
-	left: 64%;
-}
-
-.bunny-little-img {
-	background-image: url('../img/bunny2.png');
-	height: 60px;
-	width: 60px;
-	top: 54%;
-	left: -12%;
-}
-
-.book-img {
-	background-image: url('../img/book.png');
-	height: 120px;
-	bottom: 2%;
-	right: -40%;
-}
-
 @media screen and (max-width: 768px) {
-	.book-img {
+	/* .book-img {
 		bottom: -2%;
 		right: -12%;
 	}
@@ -96,11 +65,11 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 	}
 	.bunny-little-img {
 		top: 58%;
-	}
+	} */
 }
 
 @media screen and (max-width: 480px) {
-	.new-record-container {
+	/* .new-record-container {
 		width: 100%;
 		height: 100%;
 		padding: 0 20px;
@@ -111,5 +80,5 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 	}
 	.bunny-img {
 		top: 28%;
-	}
+	} */
 }

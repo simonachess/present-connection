@@ -32,12 +32,10 @@ export default function NewRecord() {
 
     return (
         <div className="main-container">
-            <div className="new-record-container">
+            <div className="page-title">
                 <h1>New Record</h1>
-                <div className="one-light-img"></div>
-                <div className="bunny-img"></div>
-                <div className="bunny-little-img"></div>
-                <div className="book-img"></div>
+            </div>
+            <div className="new-record-container">
                 <form onSubmit={handleSubmit}>
                     <label htmlFor="user-id">User ID</label>
                     <input type="number"
@@ -63,8 +61,8 @@ export default function NewRecord() {
                     {!isPending && <button type="submit">Add</button>}
                     {isPending && <button type="submit" disabled>Adding...</button>}
                 </form>
-                <button><Link to="/">Back to List</Link></button>
             </div>
+            <button><Link to="/">Back to List</Link></button>
         </div>
     )
 }

@@ -1,64 +1,47 @@
 /* RecordDetails page css */
 
 .details-container {
-	width: 500px;
-	height: 600px;
+	width: 100%;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
+	gap: 50px;
 }
 
 .record-item {
-	padding: 8px 0;
-	font-size: 20px;
-	display: flex;
-	flex-direction: row;
+	width: 100%;
 }
 
 .record-item p {
-	width: 100%;
 	padding: 15px;
 	text-align: center;
-	font-size: 22px;
 	background-color: rgba(204, 197, 183, 0.74);
 	outline: none;
 	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
 	box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, .3);
 }
 
-.item-key-style {
-	width: 100px;
-	padding: 15px 0px;
+.user-userid {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
 }
 
-.details-subcontainer {
-	position: relative;
+.user, .userid {
+	width: 100%;
 }
 
-.window-img {
-	background-image: url('../img/window.png');
-	left: -55%;
-	top: -30%;
-}
+.item-key-style {}
 
-.flower-img {
-	background-image: url('../img/flower.png');
-	left: -20%;
-	bottom: -30%;
-	height: 200px;
-	width: 100px;
-}
-
-.cat-img {
-	background-image: url('../img/cat.png');
-	right: -13%;
-	bottom: 5%;
-	width: 70px;
+.id-userid {
+	display: flex;
+	flex-direction: row;
 }
 
 @media screen and (max-width: 768px) {
-	.window-img {
+	/* .window-img {
 		display: none;
 	}
 	.flower-img {
@@ -69,11 +52,11 @@
 	}
 	.details-subcontainer {
 		margin-bottom: 20px;
-	}
+	} */
 }
 
 @media screen and (max-width: 480px) {
-	.details-container {
+	/* .details-container {
 		width: 100%;
 		height: 100%;
 		justify-content: space-evenly;
@@ -103,5 +86,5 @@
 	}
 	.flower-img {
 		display: none;
-	}
+	} */
 }

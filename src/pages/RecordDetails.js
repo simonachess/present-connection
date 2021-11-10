@@ -16,16 +16,27 @@ export default function RecordDetails() {
 
     return (
         <div className="main-container ">
-            <div className="details-container">
+            <div className="page-title">
                 <h1>Record details</h1>
-                <div className="details-subcontainer">
-                    <div className="window-img"></div>
-                    <div className="flower-img"></div>
-                    <div className="cat-img"></div>
-                    <div className="record-item"><span className="item-key-style">ID: </span><p>{data.id}</p></div>
-                    <div className="record-item"><span className="item-key-style">User ID: </span><p>{data.userId}</p></div>
-                    <div className="record-item"><span className="item-key-style">Title: </span><p>{data.title}</p></div>
-                    <div className="record-item"><span className="item-key-style">Body: </span><p>{data.body}</p></div>
+            </div>
+            <div className="details-container">
+                <div className="record-item user-userid">
+                    <div className="user">
+                        <span className="item-key-style">ID: </span>
+                        <p>{data.id}</p>
+                    </div>
+                    <div className="userid">
+                        <span className="item-key-style">User ID: </span>
+                        <p>{data.userId}</p>
+                    </div>
+                </div>
+                <div className="record-item">
+                    <span className="item-key-style">Title: </span>
+                    <p>{data.title}</p>
+                </div>
+                <div className="record-item">
+                    <span className="item-key-style">Body: </span>
+                    <p>{data.body}</p>
                 </div>
                 <button className="back-button"><Link to="/">Back to List</Link></button>
             </div>
