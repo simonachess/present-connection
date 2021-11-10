@@ -26,7 +26,7 @@
 
 @media screen and (max-width: 768px) {}
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 480px) {
 	.details-container {
 		gap: 15px;
 	}
