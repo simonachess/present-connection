@@ -10,7 +10,6 @@
 
 .post-item {
 	padding: 5px 0;
-	font-size: 20px;
 	font-weight: 700;
 }
 
@@ -50,59 +49,11 @@ footer img:hover {
 }
 
 @media screen and (max-width: 768px) {
-	/* .note-text, .lamp-img, .note-img {
-		display: none;
+	.page-number button {
+		width: 32px;
+		height: 32px;
+		padding: 0;
 	}
-	.cactus-img {
-		right: 1%;
-		top: -35%;
-	}
-	.link-new-record button {
-		left: -80%;
-		bottom: -15%;
-	}
-	.posts-container {
-		width: 100%;
-		height: 400px;
-		padding: 20px;
-		margin: 20px 0;
-	}
-	.post-item {
-		font-size: 17px;
-		padding: 3px 0;
-		display: inline;
-	}
-	.footer {
-		margin: 20px;
-	} */
 }
 
-@media screen and (max-width: 480px) {
-	/* .posts-container {
-		padding: 20px 20px 0 20px;
-		margin: 20px 0;
-	}
-	.post-item {
-		font-size: 15px;
-	}
-	.note-text, .note-img, .lamp-img, .cactus-img {
-		display: none;
-	}
-	.link-new-record button {
-		left: -25%;
-		bottom: -30%;
-	}
-	.page-number-container {
-		width: 160px;
-		margin-bottom: 30px;
-	}
-	.page-number button {
-		padding: 2px 0;
-		width: 25px;
-		height: 25px;
-		margin: 3px;
-	}
-	.footer img {
-		width: 30px;
-	} */
-}
+@media screen and (max-width: 480px) {}

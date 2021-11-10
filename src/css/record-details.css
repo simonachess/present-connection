@@ -7,37 +7,21 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 50px;
+	gap: 30px;
 }
 
 .record-item {
-	width: 100%;
+	align-items: center;
+	width: 70%;
 }
 
 .record-item p {
-	padding: 15px;
+	padding: 10px;
 	text-align: center;
 	background-color: rgba(204, 197, 183, 0.74);
 	outline: none;
 	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
 	box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, .3);
-}
-
-.user-userid {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-}
-
-.user, .userid {
-	width: 100%;
-}
-
-.item-key-style {}
-
-.id-userid {
-	display: flex;
-	flex-direction: row;
 }
 
 @media screen and (max-width: 768px) {

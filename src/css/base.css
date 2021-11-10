@@ -10,6 +10,7 @@ body {
 	width: 100vw;
 	height: 100vh;
 	background-color: beige;
+	font-size: 20px;
 }
 
 h1 {
@@ -58,14 +59,12 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-	/* .main-container {
-		width: 100%;
-		height: max-content;
-		margin: 20px 0;
+	body {
+		font-size: 16px;
 	}
-	h1 {
-		margin: 40px;
-	} */
+	.main-container {
+		width: 400px;
+	}
 }
 
 @media screen and (max-width: 480px) {

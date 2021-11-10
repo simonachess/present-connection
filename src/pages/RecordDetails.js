@@ -20,15 +20,12 @@ export default function RecordDetails() {
                 <h1>Record details</h1>
             </div>
             <div className="details-container">
-                <div className="record-item user-userid">
-                    <div className="user">
-                        <span className="item-key-style">ID: </span>
-                        <p>{data.id}</p>
-                    </div>
-                    <div className="userid">
-                        <span className="item-key-style">User ID: </span>
-                        <p>{data.userId}</p>
-                    </div>
+                <div className="record-item">
+                    <span className="item-key-style">ID: </span>
+                    <p>{data.id}</p>
+                </div><div className="record-item">
+                    <span className="item-key-style">User ID: </span>
+                    <p>{data.userId}</p>
                 </div>
                 <div className="record-item">
                     <span className="item-key-style">Title: </span>
@@ -38,7 +35,7 @@ export default function RecordDetails() {
                     <span className="item-key-style">Body: </span>
                     <p>{data.body}</p>
                 </div>
-                <button className="back-button"><Link to="/">Back to List</Link></button>
+                <button><Link to="/">Back to List</Link></button>
             </div>
         </div>
     )
