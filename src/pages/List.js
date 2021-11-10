@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import Pagination from './../components/Pagination';
-// import { quotesData } from "../data/ChessQuotes";
+
 import './../App.css'
 
 export default function List() {
@@ -33,8 +33,6 @@ export default function List() {
         return <p>Loading...</p>
     }
 
-    // const randomQuote = quotesData[Math.floor(Math.random() * quotesData.length)]
-
     return (
         <div className="main-container">
             <div className="page-title">
@@ -44,10 +42,6 @@ export default function List() {
                 </div>
             </div>
             <div className="posts-container">
-                {/* <div className="note-text">
-                    <p>{randomQuote.quote}</p>
-                    <small>-- {randomQuote.author} --</small>
-                </div> */}
                 {currentPosts.map((item, index) => {
                     return (
                         <div key={index} className="post-item">

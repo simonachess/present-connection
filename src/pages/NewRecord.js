@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { quotesData } from "../data/ChessQuotes";
 
 export default function NewRecord() {
 
@@ -30,10 +31,16 @@ export default function NewRecord() {
         })
     }
 
+    const randomQuote = quotesData[Math.floor(Math.random() * quotesData.length)]
+
     return (
         <div className="main-container">
             <div className="page-title">
                 <h1>New Record</h1>
+                <div className="quote">
+                    <p>{randomQuote.quote}</p>
+                    <p>-- {randomQuote.author} --</p>
+                </div>
             </div>
             <div className="new-record-container">
                 <form onSubmit={handleSubmit}>

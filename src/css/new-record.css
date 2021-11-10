@@ -4,6 +4,29 @@
 	width: 100%;
 }
 
+.page-title {
+	position: relative;
+}
+
+.quote {
+	width: 260px;
+	position: absolute;
+	bottom: -100%;
+	right: -70%;
+	transform: rotate(10deg);
+	background-color: khaki;
+	padding: 10px;
+	outline: none;
+	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+	box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, .3);
+}
+
+.quote p {
+	text-align: center;
+	font-size: 16px;
+	padding-top: 5px;
+}
+
 .new-record-container form {
 	width: 100%;
 	display: flex;
@@ -49,6 +72,10 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 	background-color: rgb(210, 250, 200);
 }
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+	.quote {
+		display: none;
+	}
+}
 
 @media screen and (max-width: 480px) {}
