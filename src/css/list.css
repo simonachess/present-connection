@@ -131,9 +131,14 @@
 	}
 	.posts-container {
 		width: 100%;
-		height: 480px;
+		height: 400px;
 		padding: 20px;
 		margin: 20px 0;
+	}
+	.post-item {
+		font-size: 17px;
+		padding: 3px 0;
+		display: inline;
 	}
 	.pages-container {
 		margin: 20px;
@@ -150,8 +155,6 @@
 	}
 	.post-item {
 		font-size: 15px;
-		padding: 3px 0;
-		display: inline;
 	}
 	.note-text, .note-img, .lamp-img, .cactus-img {
 		display: none;
