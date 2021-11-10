@@ -65,15 +65,16 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 .bunny-img {
 	background-image: url('../img/bunny1.png');
 	height: 80px;
-	top: 25%;
-	left: 58%;
+	width: 90px;
+	top: 22%;
+	left: 64%;
 }
 
 .bunny-little-img {
 	background-image: url('../img/bunny2.png');
 	height: 60px;
 	width: 60px;
-	top: 61%;
+	top: 54%;
 	left: -12%;
 }
 
@@ -90,8 +91,11 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 		right: -12%;
 	}
 	.bunny-img {
-		top: 28%;
+		top: 29%;
 		left: 62%;
+	}
+	.bunny-little-img {
+		top: 58%;
 	}
 }
 
@@ -104,5 +108,8 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 	}
 	.bunny-little-img, .book-img, .one-light-img {
 		display: none;
+	}
+	.bunny-img {
+		top: 28%;
 	}
 }
