@@ -74,7 +74,8 @@ a {
 @media screen and (max-width: 480px) {
 	body {
 		font-size: 14px;
-		justify-content: center;
+		justify-content: flex-start;
+		margin-top: 60px;
 	}
 	h1 {
 		font-size: 24px;
