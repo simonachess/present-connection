@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import axios from 'axios';
 
@@ -7,11 +7,13 @@ export default function RecordDetails() {
     const [data, setData] = useState([]);
     let params = useParams();
 
+    useEffect(() => {
+        const url = `https://jsonplaceholder.typicode.com/posts/${params.id}`;
+        axios.get(url).then(res => {
+            setData(res.data)
+        });
+    }, [])
 
-    const url = `https://jsonplaceholder.typicode.com/posts/${params.id}`;
-    axios.get(url).then(res => {
-        setData(res.data)
-    });
 
 
     return (
