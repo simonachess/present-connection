@@ -43,10 +43,11 @@ export default function List() {
             </div>
             <div className="posts-container">
                 {currentPosts.map((item, index) => {
+                    const i = item.id;
                     return (
                         <div key={index} className="post-item">
                             <span className="item-id">{item.id}</span>
-                            <Link to={{ pathname: `record-details/${index + 1}` }} >
+                            <Link to={{ pathname: `page${currentPage}/record-details/${i}` }} >
                                 {item.title}
                             </Link>
                         </div>

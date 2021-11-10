@@ -10,7 +10,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<List />} />
-        <Route path='/record-details/:id' element={<RecordDetails />} />
+        <Route path='/page:id/record-details/:id' element={<RecordDetails />} />
         <Route path='/new-record' element={<NewRecord />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
