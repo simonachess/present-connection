@@ -5,14 +5,10 @@
 	height: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	gap: 30px;
 }
 
 .record-item {
-	align-items: center;
-	width: 70%;
+	padding: 10px 0;
 }
 
 .record-item p {
@@ -26,11 +22,4 @@
 
 @media screen and (max-width: 768px) {}
 
-@media screen and (max-width: 480px) {
-	.details-container {
-		gap: 15px;
-	}
-	.record-item {
-		width: 100%;
-	}
-}
+@media screen and (max-width: 480px) {}
