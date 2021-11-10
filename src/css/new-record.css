@@ -1,7 +1,7 @@
 /* NewRecord page css*/
 
 .new-record-container {
-	width: 70%;
+	width: 100%;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -36,7 +36,7 @@
 }
 
 .new-record-container input[type="number"] {
-	width: 30%;
+	width: 80px;
 	-moz-appearance: textfield;
 }
 
@@ -54,31 +54,6 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 	background-color: rgb(210, 250, 200);
 }
 
-@media screen and (max-width: 768px) {
-	/* .book-img {
-		bottom: -2%;
-		right: -12%;
-	}
-	.bunny-img {
-		top: 29%;
-		left: 62%;
-	}
-	.bunny-little-img {
-		top: 58%;
-	} */
-}
+@media screen and (max-width: 768px) {}
 
-@media screen and (max-width: 480px) {
-	/* .new-record-container {
-		width: 100%;
-		height: 100%;
-		padding: 0 20px;
-		justify-content: space-evenly;
-	}
-	.bunny-little-img, .book-img, .one-light-img {
-		display: none;
-	}
-	.bunny-img {
-		top: 28%;
-	} */
-}
+@media screen and (max-width: 320px) {}

@@ -24,51 +24,13 @@
 	box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, .3);
 }
 
-@media screen and (max-width: 768px) {
-	/* .window-img {
-		display: none;
-	}
-	.flower-img {
-		left: -5%;
-	}
-	.cat-img {
-		width: 60px;
-	}
-	.details-subcontainer {
-		margin-bottom: 20px;
-	} */
-}
+@media screen and (max-width: 768px) {}
 
-@media screen and (max-width: 480px) {
-	/* .details-container {
-		width: 100%;
-		height: 100%;
-		justify-content: space-evenly;
-	}
-	.details-subcontainer {
-		width: 290px;
+@media screen and (max-width: 320px) {
+	.details-container {
+		gap: 15px;
 	}
 	.record-item {
-		flex-direction: column;
-		padding: 0;
+		width: 100%;
 	}
-	.record-item p {
-		padding: 8px;
-		font-size: 18px;
-	}
-	.item-key-style {
-		width: 100px;
-		padding: 4px 0;
-		margin: 3px 0;
-		font-size: 16px;
-	}
-	.cat-img {
-		right: 13%;
-		top: -17%;
-		width: 50px;
-		transform: rotate(-90deg)
-	}
-	.flower-img {
-		display: none;
-	} */
 }
