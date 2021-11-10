@@ -12,7 +12,7 @@ export default function RecordDetails() {
         axios.get(url).then(res => {
             setData(res.data)
         });
-    }, [])
+    }, [params.id])
 
 
 
