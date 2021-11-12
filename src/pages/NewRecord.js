@@ -62,7 +62,7 @@ export default function NewRecord() {
                     <textarea id="text"
                         value={text}
                         onChange={(e) => setText(e.target.value)}
-                        placeholder="Add new task here...">
+                        placeholder="Add text here...">
                     </textarea>
                     <span></span>
                     {!isPending && <button type="submit">Add</button>}
